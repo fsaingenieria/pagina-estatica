@@ -1,0 +1,22 @@
+/* estilos básicos */
+:root {
+  --bg: #f7f7f9;
+  --accent: #2b6cb0;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: #111;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+header { text-align: center; padding: 2rem 1rem; }
+main { flex: 1; display:flex; align-items:center; justify-content:center; }
+#hero { text-align:center; padding: 1rem; background:white; border-radius:12px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+button { background: var(--accent); color: white; border: none; padding: 0.6rem 1rem; border-radius:8px; cursor:pointer; }
+button:hover { opacity: 0.9; }
+footer { text-align:center; padding: 1rem; font-size:0.85rem; color:#555; }
