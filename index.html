@@ -1,26 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mi Página Estática</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Equipo Técnico</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Bienvenido a mi página</h1>
-    <p>Ejemplo básico con HTML, CSS y JS</p>
+
+  <!-- 🧭 NAVBAR -->
+  <header class="navbar">
+    <h1 class="logo">Servicios de ingeniería FSA</h1>
+    <nav>
+      <a href="#quienes">¿Quiénes somos?</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="hero">
-      <h2>Hola 👋</h2>
-      <button id="btnSaludo">Click me</button>
-    </section>
-  </main>
+  <!-- 👥 QUIENES SOMOS -->
+  <section id="quienes" class="section">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos un equipo de ingenieros especializados en automatización, electrónica aplicada y soluciones IoT para empresas. Ofrecemos mantenimiento, reparación y digitalización de procesos industriales.</p>
 
+    <div class="equipo">
+        <div class="miembro">
+            <img src="assets/franco.png" alt="Franco Artale">
+            <h3>Franco Artale</h3>
+            <p>Ingeniero Electrónico | Especialista en IA y Automatización</p>
+        </div>
+
+        <div class="miembro">
+            <img src="assets/sofia.png" alt="Sofía Beneviento">
+            <h3>Sofía Beneviento</h3>
+            <p>Licenciada en Informática | Integración de Sistemas y Control</p>
+        </div>
+
+        <div class="miembro">
+            <img src="assets/agustin.png" alt="Agustín Radicheta">
+            <h3>Agustín Radicheta</h3>
+            <p>Ingeniero de Software | IoT y Desarrollo de Aplicaciones</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- 🏢 EMPRESAS -->
+  <section id="trabajos" class="section empresas">
+    <h2>Empresas que confían en nosotros</h2>
+    <div class="carousel">
+      <div class="logos">
+        <img src="assets/Data.png" alt="DataStream" />
+        <img src="assets/Eco.png" alt="EcoHarvest" />
+        <img src="assets/Nexus.png" alt="Nexus ManuFacturing" />
+        <img src="assets/Opti.png" alt="OptiFlow" />
+        <img src="assets/Swift.png" alt="SwiftServe" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ⚙️ SERVICIOS -->
+  <section id="servicios" class="section servicios">
+    <h2>Servicios que ofrecemos</h2>
+    <div class="servicios-grid">
+      <div class="servicio">
+        <img src="https://cdn-icons-png.flaticon.com/512/3103/3103991.png" alt="Automatización" />
+        <h3>Automatización Industrial</h3>
+        <p>Modernización de líneas de producción, integración de PLCs y control de procesos.</p>
+      </div>
+      <div class="servicio">
+        <img src="https://cdn-icons-png.flaticon.com/512/753/753345.png" alt="Electrónica" />
+        <h3>Electrónica Aplicada</h3>
+        <p>Diseño, mantenimiento y reparación de equipos electrónicos industriales.</p>
+      </div>
+      <div class="servicio">
+        <img src="https://cdn-icons-png.flaticon.com/512/3103/3103968.png" alt="IoT" />
+        <h3>Soluciones IoT</h3>
+        <p>Conectividad de dispositivos, monitoreo remoto y análisis de datos en tiempo real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📞 CONTACTO -->
+  <section id="contacto" class="section contacto">
+    <h2>Contacto</h2>
+    <p>Podés escribirnos a <a href="mailto:fsa.ingenieria.rapida@gmail.com">fsa.ingenieria.rapida@gmail.com</a></p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/franco-santo-artale-5aa982397/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+      <a href="https://wa.me/5492346568286" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="WhatsApp"></a>
+      <a href="mailto:fsa.ingenieria.rapida@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" alt="Gmail"></a>
+    </div>
+  </section>
+
+  <!-- ⚖️ FOOTER -->
   <footer>
-    <small>© 2025 Tu Nombre</small>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms and Conditions</a>
+    <p>© 2025 Equipo Técnico - Todos los derechos reservados.</p>
   </footer>
 
   <script src="js/script.js"></script>

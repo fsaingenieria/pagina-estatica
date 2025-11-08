@@ -1,3 +1,3 @@
-document.getElementById('btnSaludo').addEventListener('click', () => {
-  alert('¡Hola! Esta es una página estática en GitHub Pages.');
-});
+// Si en el futuro querés agregar animaciones o lógica JS, va aquí.
+// Por ahora lo dejamos preparado.
+console.log("Portfolio cargado correctamente.");
